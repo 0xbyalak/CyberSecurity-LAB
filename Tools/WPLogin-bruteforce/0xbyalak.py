@@ -50,7 +50,7 @@ def main():
     for pwd in passwords:
         if try_login(args.url, args.user, pwd, args.agent):
             break
-        time.sleep(0.2)  # prevent flooding too fast
+        time.sleep(0.2) 
 
 if __name__ == "__main__":
     main()
